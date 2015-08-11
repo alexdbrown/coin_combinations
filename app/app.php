@@ -16,8 +16,8 @@
         $my_Cash_Money = new CashMoney;
         $your_Cash_Money = $my_Cash_Money->getCashMoney($_GET['cents']);
         $your_Cash_Money = explode(" ", $your_Cash_Money);
-        $string = $your_Cash_Money[0] . " quarters, " . $your_Cash_Money[1] . " dimes, " . $your_Cash_Money[2] . " nickels, and " . $your_Cash_Money[3] . " pennies.";
-
+        $string = $your_Cash_Money[0] . " 100s, " . $your_Cash_Money[1] . " 50s, " . $your_Cash_Money[2] . " 20s, " . $your_Cash_Money[3] . " 10s " . $your_Cash_Money[4] . " 5s " . $your_Cash_Money[5] . " 1s " . $your_Cash_Money[6] .
+        " quarters, " . $your_Cash_Money[7] . " dimes " . $your_Cash_Money[8] . " nickels, " . $your_Cash_Money[9] . " pennies.";
         return $app['twig']->render('view.html.twig', array('result' => $string));
     });
 
