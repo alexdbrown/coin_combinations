@@ -7,7 +7,7 @@
             // $quarters = (string) $quarters;
             // return $quarters . "q";
 
-            $denominations = [25, 10, 5];
+            $denominations = [25, 10, 5, 1];
             $cents = $cents * 100;
             $change_remaining = 0;
             $coins_array = array();
