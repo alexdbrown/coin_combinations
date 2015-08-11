@@ -13,7 +13,7 @@
             $result = $test_CashMoney->getCashMoney($cents);
 
             //Assert
-            $this->assertEquals('3q', $result);
+            $this->assertEquals('3 0', $result);
         }
 
         function test_getCashMoney_countDimes()
@@ -26,7 +26,20 @@
             $result = $test_CashMoney->getCashMoney($cents);
 
             //Assert
-            $this->assertEquals('3q, 2d'), $result);
+            $this->assertEquals('3 2', $result);
+        }
+
+        function test_getCashMoney_countNickels()
+        {
+            //Arrange
+            $test_CashMoney = new CashMoney;
+            $cents = .90;
+
+            //Act
+            $result = $test_CashMoney->getCashMoney($cents);
+
+            //Assert
+            $this->assertEquals('3 1 1', $result);
         }
     }
 
