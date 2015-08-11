@@ -1,0 +1,21 @@
+Coin Combinations in Plain English Specs
+
+Behavior= returns number of quarters
+Input= .75
+Output= "3q"
+
+Behavior= returns number of quarters and dimes
+Input= .95
+Output= "3q, 2d"
+
+Behavior= returns number of quarters and dimes and nickels
+Input= .90
+Output= "3q, 1d, 1n"
+
+Behavior= returns number of quarters and dimes and nickels and pennies
+Input= .94
+Output= "3q, 1d, 1n, 4p"
+
+Behavior=
+Input=
+Output=
