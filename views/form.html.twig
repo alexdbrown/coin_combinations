@@ -1,15 +1,16 @@
 <html>
     <head>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='css/form.styles.css'>
         <title>Change</title>
     </head>
     <body>
         <div class='container'>
-            <h1>Enter some cents</h1>
+            <h1>The crystal ball tells me I owe you some change...</h1>
             <form action='view_cashmoney'>
                 <div class='form-group'>
-                    <label for='cents'>Cents (.xx)</label>
-                    <input id='cents' name='cents' type='number' class='form-control'>
+                    <label for='cents'>Enter your (non)cents (.xx)</label>
+                    <input id='cents' name='cents' type='text' class='form-control'>
                 </div>
                 <button type='submit' class='btn-danger'>Submit</button>
             </form>

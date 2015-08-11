@@ -15,7 +15,10 @@
     $app->get("/view_cashmoney", function() use ($app) {
         $my_Cash_Money = new CashMoney;
         $your_Cash_Money = $my_Cash_Money->getCashMoney($_GET['cents']);
-        return $app['twig']->render('view.html.twig', array('result' => $your_Cash_Money));
+        $your_Cash_Money = explode(" ", $your_Cash_Money);
+        $string = $your_Cash_Money[0] . " quarters, " . $your_Cash_Money[1] . " dimes, " . $your_Cash_Money[2] . " nickels, and " . $your_Cash_Money[3] . " pennies.";
+
+        return $app['twig']->render('view.html.twig', array('result' => $string));
     });
 
     return $app;
